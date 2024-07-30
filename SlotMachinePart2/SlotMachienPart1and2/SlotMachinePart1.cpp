@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  SlotMachinePart2
+//  SlotMachine
 //
 //  Created by Aniket Sedhai on 7/4/24.
 //
@@ -10,11 +10,11 @@
 #include <map>
 
 int main(void) {
-    std::vector<int> Left_Reel { 5, 2, 3, 4, 5, 2, 3, 3, 4, 2, 2, 5, 3, 5, 3, 4, 2, 5, 2, 5};
+    std::vector<int> Left_Reel { 1, 1, 3, 4, 5, 2, 2, 3, 4, 2, 2, 5, 3, 5, 3, 4, 2, 1, 2, 5, 4, 3, 2 };
     
-    std::vector<int> Center_Reel { 2, 2, 1, 3, 2, 5, 3, 4, 2, 2, 3, 2, 1, 5, 4, 3, 5, 2, 1, 5};
+    std::vector<int> Center_Reel { 3, 1, 2, 2, 3, 5, 4, 4, 2, 2, 3, 2, 1, 5, 4, 3, 3, 2, 1, 5, 4, 1, 3, 5 };
     
-    std::vector<int> Right_Reel { 2, 3, 5, 3, 4, 3, 1, 1, 2, 2, 3, 4, 4, 3, 2, 3, 2, 1, 5, 1};
+    std::vector<int> Right_Reel { 2, 3, 5, 4, 4, 3, 1, 1, 2, 2, 3, 5, 4, 3, 2, 1, 2, 1, 5, 1, 3, 4, 1, 5, 2 };
     
     std::map<int, int> combination_payout = { {111, 2}, {222, 7}, {333, 10}, {331, 2}, {332, 2}, {334, 3}, {335, 4}, {444, 15}, {441, 5}, {442, 5}, {443, 2}, {445, 6}, {123, 2}, {551, 2}, {555, 70}};
     
